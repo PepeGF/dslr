@@ -1,0 +1,26 @@
+[project]
+name = "dslr"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.10.7",
+    "pandas>=2.3.3",
+    "seaborn>=0.13.2",
+]
+
+[tool.ruff]
+lint.extend-select = ["ALL"]
+ignore = [  "T201",             # prints
+            "D102",             # functionms docstrings
+            "D419",             # docstring empty
+            "FURB136",          # min and max inside ifs
+            ]
+
+[tool.mypy]
+ignore_missing_imports = true
+check_untyped_defs = true
+
+
+
